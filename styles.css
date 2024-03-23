@@ -1,27 +1,128 @@
 html {
-  background-color: black;
+  margin: -10px;
+  padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
-  background-color: rgb(121, 80, 80);
-  align-items: center;
+  background-color: darkslategray;
+  text-align: center;
 }
 
-header {
-  color: black;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-header > h1 {
+h1 {
   color: rgb(206, 188, 222);
   text-shadow: rgb(1, 2, 8) 2px 0 10px;
 }
 
-#nav-bar {
-  flex-direction: row;
+h2 {
+  color: white;
+  font-size: medium;
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(108, 62, 192),
+    rgb(165, 57, 57)
+  );
   color: black;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+.footer a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all 0.3s;
+  float: left;
+  display: block;
+}
+
+.footer a:hover {
+  background-color: black;
+  color: green;
+  border-radius: 4px;
+  transform: translateY(-5px);
+}
+
+.footer a.twitter:hover {
+  background-color: black;
+  color: blue;
+  border-radius: 4px;
+  transform: translateY(-5px);
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+#nav-bar li {
+  float: left;
+  padding: 5px;
+}
+
+#nav-bar a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+#nav-bar a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  transform: translateY(-5px);
+}
+
+#contact-nav-bar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+#contact-nav-bar li {
+  float: left;
+  padding: 5px;
+}
+
+#contact-nav-bar a {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
 }
